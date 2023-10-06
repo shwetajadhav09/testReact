@@ -4,7 +4,7 @@ import Axios from "axios";
 
 function Contact()
 {
-    const [name,setName] = useState("Shankar");
+    const [name,setName] = useState("Shweta");
     const [data,setData] = useState([]);
 
     useEffect(()=>{
@@ -30,7 +30,7 @@ function Contact()
     return(
         <div>
             <h1>The owner of this page is {name}</h1>
-            <button onClick={() => setName("Ravi")}>Change owner</button>
+            <button onClick={() => setName("Soham")}>Change owner</button>
             {ContactDetails()}
         </div>
     )
